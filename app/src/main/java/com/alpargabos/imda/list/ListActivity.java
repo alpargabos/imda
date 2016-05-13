@@ -1,4 +1,4 @@
-package com.alpargabos.imda;
+package com.alpargabos.imda.list;
 
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -16,8 +16,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import com.alpargabos.imda.R;
 
-public class MainActivity extends AppCompatActivity {
+public class ListActivity extends AppCompatActivity {
 
 	/**
 	 * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_list);
 
 		// Create the adapter that will return a fragment for each of the three
 		// primary sections of the activity.
@@ -162,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
 
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+			View rootView = inflater.inflate(R.layout.fragment_list, container, false);
 			ImageView imageView = (ImageView) rootView.findViewById(R.id.section_icon);
 			imageView.setImageResource(R.mipmap.ic_launcher);
 			return rootView;
