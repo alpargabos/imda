@@ -35,11 +35,13 @@
 
 
 	<style name="LoginEditText.Email">
+		<item name="android:textColor">@android:color/white</item>
 		<item name="android:hint">@string/email</item>
 		<item name="android:inputType">textEmailAddress</item>
 	</style>
 
 	<style name="LoginEditText.Password">
+		<item name="android:textColor">@android:color/white</item>
 		<item name="android:hint">@string/password</item>
 		<item name="android:inputType">textPassword</item>
 		<item name="android:imeActionLabel">@string/login_button</item>

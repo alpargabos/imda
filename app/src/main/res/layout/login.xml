@@ -29,18 +29,16 @@
 		<LinearLayout
 				android:orientation="vertical"
 				android:id="@+id/login_fields"
-				android:layout_width="250dp"
+				android:layout_width="200dp"
 				android:layout_height="150dp"
 				android:layout_gravity="center_horizontal"
-				android:gravity="center_horizontal"
-		>
+				android:gravity="center_horizontal">
 
 			<android.support.design.widget.TextInputLayout
 					android:id="@+id/email_edittext_layout"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:textColorHint="@color/gray"
-			>
+					android:textColorHint="@color/gray">
 				<EditText
 						android:id="@+id/email"
 						android:layout_width="match_parent"
@@ -60,6 +58,7 @@
 						style="@style/LoginEditText.Password"/>
 			</android.support.design.widget.TextInputLayout>
 		</LinearLayout>
+
 		<android.support.design.widget.FloatingActionButton
 				android:id="@+id/fab_next"
 				app:backgroundTint="@color/nextButtonColor"
