@@ -6,6 +6,10 @@
 		<item name="colorPrimary">@color/colorPrimary</item>
 		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
 		<item name="colorAccent">@color/colorAccent</item>
+
+		<item name="colorControlNormal">@color/gray</item>
+		<item name="colorControlActivated">@color/colorAccent</item>
+		<item name="colorControlHighlight">@color/colorAccent</item>
 	</style>
 	<style name="AppTheme.NoActionBar">
 		<item name="windowActionBar">false</item>
@@ -14,4 +18,42 @@
 	<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 	<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
+	<style name="SocialFab" parent="Base.Widget.AppCompat.ImageButton">
+		<item name="android:layout_width">64dp</item>
+		<item name="android:layout_height">64dp</item>
+		<item name="elevation">6dp</item>
+		<item name="pressedTranslationZ">8dp</item>
+		<item name="borderWidth">0dp</item>
+		<item name="rippleColor">#ffffff</item>
+		<item name="android:layout_margin">30dp</item>
+	</style>
+
+	<style name="FloatedEditTextLabel">
+		<item name="android:textColor">@color/colorPrimary</item>
+		<item name="android:textSize">12sp</item>
+	</style>
+
+
+	<style name="LoginEditText.Email">
+		<item name="android:hint">@string/email</item>
+		<item name="android:inputType">textEmailAddress</item>
+	</style>
+
+	<style name="LoginEditText.Password">
+		<item name="android:hint">@string/password</item>
+		<item name="android:inputType">textPassword</item>
+		<item name="android:imeActionLabel">@string/login_button</item>
+		<item name="android:imeOptions">actionGo</item>
+	</style>
+
+	<style name="LoginEditText" parent="Widget.AppCompat.EditText">
+		<item name="android:maxLines">1</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textColor">@color/darkGray</item>
+		<item name="android:textColorHint">@color/lightGray</item>
+		<item name="android:fontFamily">sans-serif</item>
+		<!--<item name="android:textCursorDrawable">@drawable/cursor</item>-->
+	</style>
+	<string name="email">email</string>
+	<string name="password">password</string>
 </resources>
