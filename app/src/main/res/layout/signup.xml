@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 			  xmlns:app="http://schemas.android.com/apk/res-auto"
-			  android:id="@+id/login_layout"
+			  android:id="@+id/signup_layout"
 			  android:orientation="vertical"
 			  android:layout_width="match_parent"
-			  android:layout_height="wrap_content">
+			  android:layout_height="wrap_content"
+			  android:background="@android:color/white">
 
 	<TextView
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="@string/login_button"
+			android:text="@string/signup_button"
 			android:layout_gravity="center_horizontal"
 			android:textSize="21sp"
-			android:textColor="@android:color/white"
+			android:textColor="@color/colorPrimary"
 			android:textAllCaps="false"
 			android:layout_marginBottom="30dp"/>
 
@@ -28,7 +29,7 @@
 
 		<LinearLayout
 				android:orientation="vertical"
-				android:id="@+id/login_fields"
+				android:id="@+id/signup_fields"
 				android:layout_width="200dp"
 				android:layout_height="150dp"
 				android:layout_gravity="center_horizontal"
@@ -38,25 +39,34 @@
 					android:id="@+id/email_edittext_layout"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:textColorHint="@color/gray">
+					android:textColorHint="@color/gray"
+					android:theme="@style/SignupTextLabel"
+			>
 				<EditText
 						android:id="@+id/email"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
-						style="@style/LoginEditText.Email"/>
+						style="@style/LoginEditText.Email"
+						android:textColor="@color/midnightBlue"
+				/>
 			</android.support.design.widget.TextInputLayout>
 
 			<android.support.design.widget.TextInputLayout
 					android:id="@+id/password_edittext_layout"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:textColorHint="@color/gray">
+					android:textColorHint="@color/gray"
+					android:theme="@style/SignupTextLabel"
+			>
 				<EditText
 						android:id="@+id/password"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
-						style="@style/LoginEditText.Password"/>
+						style="@style/LoginEditText.Password"
+						android:textColor="@color/wetAsphalt"
+				/>
 			</android.support.design.widget.TextInputLayout>
+
 		</LinearLayout>
 
 		<android.support.design.widget.FloatingActionButton

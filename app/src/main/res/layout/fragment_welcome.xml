@@ -20,7 +20,7 @@
 	/>
 
 	<LinearLayout
-			android:id="@+id/linearLayout"
+			android:id="@+id/welcome_texts"
 			android:orientation="vertical"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -85,6 +85,13 @@
 			 android:layout_height="wrap_content"
 			 android:layout_width="match_parent"
 			 android:layout_alignParentBottom="true"
-			 android:visibility="gone"
+			 android:visibility="invisible"
+	/>
+
+	<include layout="@layout/signup"
+			 android:layout_height="wrap_content"
+			 android:layout_width="match_parent"
+			 android:layout_alignParentBottom="true"
+			 android:visibility="invisible"
 	/>
 </RelativeLayout>

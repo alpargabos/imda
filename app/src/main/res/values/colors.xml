@@ -13,4 +13,7 @@
 	<color name="gray">#B0BEC5</color>
 	<color name="darkGray">#152235</color>
 	<color name="lightGray">#8E939C</color>
+	<color name="wetAsphalt">#34495e</color>
+	<color name="midnightBlue">#2c3e50</color>
+
 </resources>
