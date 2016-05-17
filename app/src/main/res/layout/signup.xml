@@ -8,16 +8,18 @@
 			  android:background="@android:color/white">
 
 	<TextView
+			android:id="@+id/signup_text"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="@string/signup_button"
 			android:layout_gravity="center_horizontal"
+			android:text="@string/signup_button"
 			android:textSize="21sp"
 			android:textColor="@color/colorPrimary"
 			android:textAllCaps="false"
 			android:layout_marginBottom="30dp"/>
 
 	<LinearLayout
+			android:id="@+id/signup_email_layout"
 			android:orientation="horizontal"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -28,8 +30,8 @@
 			android:gravity="center">
 
 		<LinearLayout
-				android:orientation="vertical"
 				android:id="@+id/signup_fields"
+				android:orientation="vertical"
 				android:layout_width="200dp"
 				android:layout_height="150dp"
 				android:layout_gravity="center_horizontal"
@@ -81,6 +83,7 @@
 	</LinearLayout>
 
 	<android.support.design.widget.CoordinatorLayout
+			android:id="@+id/social_layout"
 			android:layout_width="match_parent"
 			android:layout_height="120dp"
 			android:paddingLeft="40dp"
